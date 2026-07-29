@@ -88,25 +88,3 @@ better-performing, more robust model.
 4. Deploy. You'll get a public link like `https://your-app-name.streamlit.app` that
    you can share with your sister's mentor or demo live.
 
-## Why this project structure works well for a college submission
-
-- **Not too basic**: it uses transfer learning (not a toy from-scratch CNN), proper
-  evaluation (confusion matrix, per-class precision/recall), and model explainability
-  (Grad-CAM) — all things a mentor will recognize as good practice.
-- **Not too advanced**: no custom architectures, no massive fine-tuning, no
-  infrastructure complexity. Everything runs on free tools (Colab, Streamlit Cloud,
-  Gemini free tier).
-- **Actually "Gen AI"**: the LLM-generated treatment report is the part that
-  differentiates this from a thousand other "tomato disease CNN" projects online —
-  it's the genuine generative AI component, not just a labeled add-on.
-
-## Suggested things to add to your project report/presentation
-
-- Screenshot of the accuracy/loss curves and confusion matrix from the notebook.
-- A couple of Grad-CAM examples showing correct focus areas.
-- A short note on limitations (e.g. the model is trained on lab-condition images from
-  PlantVillage, so accuracy may drop on real, messy field photos — this is a great
-  thing to mention proactively, it shows critical thinking).
-- If you want to go further later: test the model on a few images from the **PlantDoc**
-  dataset (real-world photos) to demonstrate generalization, and discuss the accuracy
-  drop.
